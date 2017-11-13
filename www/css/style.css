@@ -1,0 +1,81 @@
+/* Empty. Add your own CSS if you like */
+.home .scroll-content {
+    display: table !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-top: -50px; /* the height of the centered content */
+    text-align: center;
+  }
+  .home .scroll {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  h2{
+      font-size:200px;
+      display: inline;
+      margin:0;
+  }
+
+  .tabs-top > .tabs, .tabs.tabs-top{
+    background-color:#128C7E;
+  }
+
+  .platform-android .bar .title{
+    background-color:#128C7E;
+    margin:0em;
+  }
+
+  .tabs-top > .tabs, .tabs.tabs-top {
+    top: 44px;
+    padding-top: 0;
+    background-position: bottom;
+    border-top-width: 0;
+    /* border-bottom-width: 1px; */
+}
+
+.tabs-striped .tabs {
+  background-color:#128C7E;
+  background-image: none;
+  border: none;
+  padding-top: 2px;
+}
+.bar-header {
+  border: 0px !important;
+  border-bottom-color: transparent !important;
+  background-image: none !important;
+  border-bottom: none !important;
+}
+
+.bar .title{
+  height: 2.4em;
+}
+
+.tab-item .icon {
+  color: white;
+}
+
+span{
+  color:white
+}
+
+h2 .title{
+  color:white
+}
+
+.bar-stable{
+  background-color:#128C7E;
+}
+
+h1 .title{
+  background-color:#128C7E;
+}
+
+ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.active, ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.activated{
+  border-color: #fff;
+  color: #fff;
+}
+
+#addBtn{
+  background-color:#128C7E;  
+}

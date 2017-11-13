@@ -1,0 +1,44 @@
+<ion-view view-title="Adicione gastos">
+    <ion-content ng-controller="InputCtrl">
+      <ion-list>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Motivo do custo</span>
+          <input type="text" placeholder="Motivo do custo" ng-model="motivoCusto">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Valor</span>
+          <input type="number" placeholder="Valor" ng-model="valor">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Data</span>
+          <input  onfocus="(this.type='date')" placeholder="{{placeholder}}" ng-model="data" type="{{type}}">
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Descrição</span>
+          <input type="text" placeholder="Descrição" ng-model="descricao">
+        </label>
+        <!--Botão para adicionar novo custo à lista de custos-->
+        <button class="button button-block" id="addBtn" ng-click="addCost()">
+          Adicionar custo
+        </button>
+        <!--Botão para limpar os campos do form-->
+        <button class="button button-block button-assertive" ng-click="clearFields()">
+          Limpar campos
+        </button>
+       <!-- {{teste}}
+        {{motivoCusto}}
+        {{valor}}        
+        {{data}}
+        {{descricao}}
+        tipo de data é {{type}}
+        <br>
+        <br>
+        <br>
+        placeholder é {{placeholder}}
+        tipo de data é {{type}}
+<br><br>
+{{hello}}-->
+      </ion-list>
+    </ion-content>
+  </ion-view>
+  

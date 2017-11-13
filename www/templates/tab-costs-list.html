@@ -1,0 +1,48 @@
+<ion-view  ng-controller="ListCtrl" class="has-header">
+
+    <ion-item class="item"  style="
+        margin-top:5.7em;
+        height:3em;
+        width:105%;
+        position:absolute;
+        background-color:#128C7E;
+        text-align:center;
+        ">
+            <h2 class="title" style="font-size:1.2em;font-weight: bold;color:white;">Total:</h2> <p style="display:inline;color:white">{{sum| currency : "R$ "}}</p> 
+        </ion-item>  
+  <ion-content style="  margin-top:3em!important;">
+  
+        <div class="row" ng-if="showMsg">
+            <div class="col">
+                <div class="text-center">
+                    <h2 style="text-align: center;">{{message}} </h2>
+                </div>
+            </div>
+        </div>
+      <ion-item class="item"  ng-repeat="chat in ob">
+       
+         
+          
+        <div class="row">
+
+            <div class="col" style="text-align:left">
+                <i style="margin-right:0.1em;display:inline-block;font-size:1.5em;" class="icon ion-star"></i>
+                <p style="display:inline">{{chat.motivo}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-50" ><i style="margin-right:0.1em;display:inline-block;font-size:1.5em;" class="icon ion-calendar"></i><!--<h2 style="font-size:1.2em">Data:</h2>--> <p style="display:inline">{{chat.data}}</p></div>
+          <div class="col" ><i style="margin-right:0.1em;display:inline-block;font-size:1.5em;" class="icon ion-cash"></i> <!--<h2 style="font-size:1.2em">Valor: </h2>--><p style="display:inline">{{chat.valor | currency : "R$ "}}</p></div>
+        </div>
+            <a href="" ng-click="exibe=!exibe">opa</a>
+        
+        <div class="row item-text-wrap" ng-if="exibe">
+            <p style="display:inline">{{chat.descricao}}</p>
+
+        </div>
+        </ion-item>
+    </ion-list>
+  </ion-content>
+
+</ion-view>
