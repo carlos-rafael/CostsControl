@@ -89,9 +89,22 @@ angular.module('starter.controllers', ['sqlite'])
   //função que adiciona um novo custo
   $scope.addCost = function(){
 
-    custosFactory.insert($scope.motivoCusto, $scope.valor, $scope.data, $scope.descricao);
-    //motivo, valor, data, descricao
-    $scope.clearFields();
+    if($scope.descricao === ''){
+      $scope.descricao = '-';
+    }
+
+    if($scope.motivoCusto===''){
+      alert("Por favor, preencha o motivo do custo");
+    }
+    else if($scope.valor===''){
+      alert("Por favor, preencha o valor do custo");
+    }else if($scope.data ===''){
+      alert("Por favor, preencha a data do custo");
+    }else{
+      custosFactory.insert($scope.motivoCusto, $scope.valor, $scope.data, $scope.descricao);
+      //motivo, valor, data, descricao
+      $scope.clearFields();
+    }
   };
  
 });

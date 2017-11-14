@@ -41,7 +41,7 @@ sqlite.factory('custosFactory', function($cordovaSQLite){
                         var response = res.rows;
                         console.log('response', response);
                         
-
+                        
 
                         //var first = res.row.item(0);
                         var first = res.rows.item(0);

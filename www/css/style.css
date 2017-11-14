@@ -83,3 +83,8 @@ ion-tabs.tabs-striped.tabs-color-active-positive .tab-item.tab-item-active, ion-
 .button{
   color:white;
 }
+
+#detailsBtn{
+  background-color:#128C7E; 
+  color:white;
+}

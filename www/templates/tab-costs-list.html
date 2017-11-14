@@ -35,9 +35,10 @@
           <div class="col col-50" ><i style="margin-right:0.1em;display:inline-block;font-size:1.5em;" class="icon ion-calendar"></i><!--<h2 style="font-size:1.2em">Data:</h2>--> <p style="display:inline">{{chat.data}}</p></div>
           <div class="col" ><i style="margin-right:0.1em;display:inline-block;font-size:1.5em;" class="icon ion-cash"></i> <!--<h2 style="font-size:1.2em">Valor: </h2>--><p style="display:inline">{{chat.valor | currency : "R$ "}}</p></div>
         </div>
-            <a href="" ng-click="exibe=!exibe">opa</a>
+            <button id="detailsBtn" href="" ng-click="exibe=!exibe">Detalhes</button>
         
         <div class="row item-text-wrap" ng-if="exibe">
+
             <p style="display:inline">{{chat.descricao}}</p>
 
         </div>
